@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "HeydingsCommonIconsRegular";
+        src: url("http://ianfarb.com/random/heydings_icons-webfont.eot");
+        src: url("http://ianfarb.com/random/heydings_icons-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("http://ianfarb.com/random/heydings_icons-webfont.woff")
+            format("woff"),
+          url("http://ianfarb.com/random/heydings_icons-webfont.ttf")
+            format("truetype"),
+          url("http://ianfarb.com/random/heydings_icons-webfont.svg#HeydingsCommonIconsRegular")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #e5e5e5;
+      }
+
+      .bg {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: 0.25s;
+        pointer-events: none;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      li a {
+        display: block;
+        float: left;
+        width: 20%;
+        padding: 25px 0;
+        text-align: center;
+        font-family: "HeydingsCommonIconsRegular", Helvetida Neue, sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 40px;
+        color: #fff;
+        background: #ccc;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+        transition: 0.25s;
+      }
+
+      li a:hover {
+        margin: -10px 0 0 0;
+      }
+
+      .menu {
+        width: 500px;
+        margin: 60px auto 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .menu li:first-child a {
+        background: pink !important;
+      }
+      .menu li:nth-child(2) a {
+        background: plum !important;
+      }
+      .menu li:nth-child(3) a {
+        background: palevioletred !important;
+      }
+      .menu li:nth-child(4) a {
+        background: rosybrown !important;
+      }
+      .menu li:nth-child(5) a {
+        background: #ec6dff !important;
+      }
+
+      .menu li:first-child:hover ~ .bg {
+        background: pink;
+      }
+      .menu li:nth-child(2):hover ~ .bg {
+        background: plum;
+      }
+      .menu li:nth-child(3):hover ~ .bg {
+        background: palevioletred;
+      }
+      .menu li:nth-child(4):hover ~ .bg {
+        background: rosybrown;
+      }
+      .menu li:nth-child(5):hover ~ .bg {
+        background: #ec6dff;
+      }
+
+     .img1 {
+        float: right;
+        margin-right: 5px;
+      padding: 10px;
+      width: 50%;
+      border-radius: 15px 10px 15px 10px;
+     }
+
+     .img2 {
+        flex: 2;
+        margin: 10px;
+        padding-left: 35px;
+      width: 38%;
+      border-radius: 15px 10px 15px 10px;
+     }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="home.html">R</a></li>
+      <li><a href="#">A</a></li>
+      <li><a href="#">Y</a></li>
+      <li><a href="#">A</a></li>
+      <li><a href="#">S</a></li>
+      <li class="bg"></li>
+    </ul>
+    <div class="image1">
+   <div class="img1"><img src="494361369_1070470701626564_1222850466560150006_n.jpg" alt=""> </div>
+    <div class="img2"><img src="494822002_677928388365451_1039555733301135923_n.jpg" alt="" width="100%"> </div>
+  </body>
+</html>
